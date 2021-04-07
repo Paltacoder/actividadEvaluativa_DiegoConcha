@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="autor" content="Diego Concha de la Fuente">
+	<meta name="keywords" content="CurriculumVitae, Cantante, Musica Popular, Luis jara">
+	<meta name="description" content="CV ficticio de Luis Jara">
+    <meta name="language" content="es-ES">
+    <title>Formulario de pana</title>
+    <link rel="stylesheet" href="css/estiloEvaluativa2.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    
+</head>
+<body>
+    <div id="mensaje">Hola</div>
+    <form id="formulario" method="POST" action="#">
+        <ul>
+            <li>
+                <label for="nombres">Nombres:</label>
+                <input id="nombres" type="text" placeholder="Nombres" required/>
+            </li>
+            
+            <li>
+                <label for="apellidos">Apellidos:</label>
+                <input id="apellidos" type="text" placeholder="Apellidos" required/>
+            </li>
+
+            <li>
+                <label for="rut">RUT:</label>
+                <input id="rut" type="text" placeholder="Rut sin puntos" required/>
+            </li>
+
+            <li>
+                <label for="correoElectronico">Correo Electronico:</label>
+                <input id="correoElectronico" type="email" placeholder="Correo Electronico" required/>
+            </li>
+
+            <li>
+                <label for="telefono">Telefono Movil:</label>
+                <input min="111111111" max="999999999" id="telefono" type="number" placeholder="Telefono de 9 digitos" required/>
+            </li>
+            <li>
+                <label>Lenguajes que conoce:</label><br><br>
+                <div id="checklist">                    
+                    <input name="languages" type="checkbox" value="0">Python</input>
+                    <input name="languages" type="checkbox" value="1">Java</input>
+                    <input name="languages" type="checkbox" value="2">TypeScript</input>
+                    <input name="languages" type="checkbox" value="3">PHP</input>
+                    <input name="languages" type="checkbox" value="4">C#</input>
+                    <input name="languages" type="checkbox" value="5">C++</input>
+                </div>
+                
+            </li>
+            <li>
+                <label>Nivel de conocimiento en programacion:</label><br><br>
+                <input id="nivelConocimiento" type="range" min="0" max="100">
+            </li>
+            <li>
+                <label>Indique sus años de experiencia laboral:</label>
+                <div id="radioType">
+                    <input required type="radio" value="1" name="radio">1.</input>                    
+                    <input type="radio" value="2" name="radio">2.</input>                    
+                    <input type="radio" value="3" name="radio">3.</input>                    
+                    <input type="radio" value="4" name="radio">4.</input>                    
+                    <input type="radio" value="5" name="radio">5.</input>                    
+                </div>
+                
+            </li><br>
+            <li>
+                <div id="descripcion">
+                    <label id="descripcionText" for="descripcion">Descripción breve sobre usted:</label><br><br><br>
+                    <textarea maxlength="300" id="descripcion"></textarea>
+                </div>
+                
+            </li>
+                <div class="botones">
+                    <li class="button">
+                        <button id="submitButton" type="submit">Enviar datos</button>
+                    </li>
+                    <li class="button">
+                        <button id="cleanButton">Limpiar datos</button>
+                    </li>
+
+                </div>            
+
+        </ul>
+        
+
+
+    </form>
+    <!-- <script src="/ts/validaciones.ts" async defer></script> -->
+    <script src="/js/validaciones.js" async defer></script>
+</body>
+</html>

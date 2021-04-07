@@ -1,0 +1,61 @@
+*{
+    font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
+}
+form{
+    margin: 0px;
+    padding: 2em;
+    width: 40%;
+    border: 1px solid #000;
+    float: left;
+}
+form ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+label{
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    margin-right: 3px;
+    min-width: 100px;
+}
+input{
+    width: 60%;
+    height: auto;
+       
+}
+textarea{
+    width: 50%;
+    height: 5em;
+    
+}
+form ul li{
+    margin: 10px;
+}
+#checklist{
+    display: inline-block;
+    align-items:center;
+    
+}
+#radioType{
+    display: flex;
+    width: 30%;
+    margin-left: 25%;
+    
+}
+#mensaje{
+    display: none;
+}
+.botones{
+    display: flex;
+    margin: 25px 0 0 0;
+}
+#descripcion{
+    display: flex;    
+}
+#descripcionText{
+    margin-right: 10px;
+}
